@@ -24,7 +24,7 @@
 .carousel .item {
 	height: 300px;
 }
-/*
+
 .carousel img {
 	position: absolute;
 	top: 0;
@@ -35,14 +35,13 @@
 
 .carousel-caption {
 	background-color: transparent;
-	position: static;
-	max-width: 550px;
-	padding: 20px;
-	margin-top: 0px;
+	padding: 50px;
+
 }
 
 
 .carousel-caption h1, .carousel-caption .lead {
+	font-size:50px;
 	margin: 0;
 	line-height: 1.25;
 	color: #fff;
@@ -50,4 +49,9 @@
 }
 .carousel-caption .btn {
 	margin-top: 10px;
-}*/
+}
+.carousel-caption p{
+	font-size:20px;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
