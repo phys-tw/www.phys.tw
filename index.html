@@ -21,7 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
-
+	<link href="css/carousel.css" />
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
@@ -34,9 +34,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
 
-  <body>
+  <body id="top" data-spy="scroll" data-target=".navbar-1">
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -47,19 +49,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">[ phys.tw ]</a>
+          <a class="navbar-brand" href="#top">[ phys.tw ]</a>
         </div>
         <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-<!--
-            <div class="form-group">
-              <input id="Email" name="Email" type="email" placeholder="Email" spellcheck="false" class="form-control">
-            </div>
-            <div class="form-group">
-              <input id="Passwd" name="Passwd" type="password" placeholder="Password" class="form-control">
-            </div>
-            <button id="signIn" name="signIn" type="submit" class="btn btn-success" href="#">登入</button>
--->
+		  <ul class="nav navbar-nav" role="tablist">
+		    <li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		  </ul>
+          <form class="navbar-form navbar-right" role="form" novalidate method="post" action="https://accounts.google.com/ServiceLoginAuth" id="gaia_loginform">
             <a class="btn btn-success" href="https://mail.google.com/a/phys.tw/" role="button">登入</a>
           </form>
 
@@ -103,15 +100,14 @@
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
+      <hr id="about" class="featurette-divider">
+      <div  class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">關於<span class="text-muted">系學會</span></h2>
           <p class="lead">
             <ul>
-              <li><h3>會長：王作剛<h3></li>
-              <li><h3>副會長：張從文</h3></li>
+              <li><h3>會長：鍾易<h3></li>
+              <li><h3>副會長：江翊,曾奕晴</h3></li>
             </ul>
           </p>
         </div>
@@ -120,8 +116,7 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
-
+      <hr id="contact" class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="images/7833318.jpg" alt="Contact">
@@ -156,5 +151,8 @@
       ga('create', 'UA-772368-16', 'phys.tw');
       ga('send', 'pageview');
     </script>
+	<script>
+	  $('body').scrollspy({ target: '.navbar-1' })
+	</script>
   </body>
 </html>
