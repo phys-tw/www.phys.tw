@@ -38,7 +38,7 @@
     <script src="js/bootstrap.min.js"></script>
   </head>
 
-  <body>
+  <body id="top" data-spy="scroll" data-target=".navbar-1">
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -49,9 +49,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">[ phys.tw ]</a>
+          <a class="navbar-brand" href="#top">[ phys.tw ]</a>
         </div>
         <div class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav" role="tablist">
+		    <li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		  </ul>
           <form class="navbar-form navbar-right" role="form" novalidate method="post" action="https://accounts.google.com/ServiceLoginAuth" id="gaia_loginform">
             <div class="form-group">
               <input id="Email" name="Email" type="hidden" placeholder="Email" spellcheck="false" class="form-control">
@@ -115,10 +119,8 @@
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
-
-
-      <div class="row featurette">
+      <hr id="about" class="featurette-divider">
+      <div  class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">關於<span class="text-muted">系學會</span></h2>
           <p class="lead">
@@ -133,8 +135,7 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
-
+      <hr id="contact" class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="images/7833318.jpg" alt="Contact">
@@ -172,5 +173,8 @@
       ga('create', 'UA-772368-16', 'phys.tw');
       ga('send', 'pageview');
     </script>
+	<script>
+	  $('body').scrollspy({ target: '.navbar-1' })
+	</script>
   </body>
 </html>
