@@ -72,7 +72,7 @@
                 </li>
               </ul>
               <form class="navbar-form navbar-right" role="form" novalidate method="post" action="https://accounts.google.com/ServiceLoginAuth" id="gaia_loginform">
-                <a class="btn btn-danger" href="https://docs.google.com/forms/d/1kzVPR0JRwYKbrkwchMOizk3zlPGSJ3y5NzpAgC80bWU/viewform" role="button">註冊</a>
+                <a class="btn btn-danger" data-toggle="modal" data-target="#myModal" role="button">註冊</a>
                 <a class="btn btn-success" href="https://mail.google.com/a/phys.tw/" role="button">登入</a>
               </form>
             </div>
@@ -81,7 +81,22 @@
 
       </div>
     </div>
-
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Registration</h4>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Carousel
     ================================================== -->
