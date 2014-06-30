@@ -59,19 +59,22 @@
                 <li><a href="#about">關於系學會</a></li>
                 <li><a href="#contact">聯絡我們</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">相關網站 <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">相關連結<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="http://www.ntu.edu.tw/">國立臺灣大學</a></li>
                     <li><a href="http://www.phys.ntu.edu.tw/">國立臺灣大學物理系</a></li>
                     <li><a href="http://web.phys.ntu.edu.tw/physhistory/spacetime/">時空系刊</a></li>
+                    <li><a href="http://cup.phys.tw/">大物盃歷史</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">友站</li>
                     <li><a href="http://sciscape2.org/">Sciscape科景</a></li>
+                    <li><a href="http://physicsfaq.org/">光與物質小站</a></li>
                     <li><a href="http://phy.tw/">phy.tw</a></li>
                   </ul>
                 </li>
               </ul>
               <form class="navbar-form navbar-right" role="form" novalidate method="post" action="https://accounts.google.com/ServiceLoginAuth" id="gaia_loginform">
+                <a class="btn btn-danger" data-toggle="modal" data-target="#myModal" role="button">註冊</a>
                 <a class="btn btn-success" href="https://mail.google.com/a/phys.tw/" role="button">登入</a>
               </form>
             </div>
@@ -80,7 +83,22 @@
 
       </div>
     </div>
-
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Registration</h4>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Carousel
     ================================================== -->
@@ -93,7 +111,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="images/198112@2x.jpg" alt="">
+          <img src="images/198112.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>台大物理系學會</h1>
@@ -103,7 +121,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/44796294@2x.jpg" alt="">
+          <img src="images/44796294.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>台大物理營</h1>
@@ -113,7 +131,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/7833318@2x.jpg" alt="">
+          <img src="images/7833318.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>杜鵑花節</h1>
@@ -158,7 +176,7 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/7833318.jpg" alt="contact">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d903.8396722844865!2d121.53669544722139!3d25.021898621892984!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1404144589680" width="450" height="450" frameborder="0" style="border:0"></iframe>
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">聯絡<span class="text-muted">我們</span></h2>
@@ -176,7 +194,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 NTU Physics &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2014 NTU Physics &middot; Photo credits: <a href="http://www.panoramio.com/photo/198112">Howard Chen</a> &middot; <a href="http://www.panoramio.com/photo/7833318">Chun-Teh Chen</a> &middot; <a href="http://www.panoramio.com/photo/44796294">jam.li</a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -187,7 +205,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/retina.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
