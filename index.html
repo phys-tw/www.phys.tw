@@ -17,11 +17,11 @@
     <title>[ phys .tw ]</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
-
+    <link href="css/jumbotron.css" rel="stylesheet"/>
+	<link href="css/carousel.css" rel="stylesheet"/>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
@@ -36,7 +36,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body id="top" data-spy="scroll" data-target=".navbar-1">
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -47,19 +47,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">[ phys.tw ]</a>
+          <a class="navbar-brand" href="#top">[ phys.tw ]</a>
         </div>
         <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-<!--
-            <div class="form-group">
-              <input id="Email" name="Email" type="email" placeholder="Email" spellcheck="false" class="form-control">
-            </div>
-            <div class="form-group">
-              <input id="Passwd" name="Passwd" type="password" placeholder="Password" class="form-control">
-            </div>
-            <button id="signIn" name="signIn" type="submit" class="btn btn-success" href="#">登入</button>
--->
+		  <ul class="nav navbar-nav" role="tablist">
+		    <li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		  </ul>
+          <form class="navbar-form navbar-right" role="form" novalidate method="post" action="https://accounts.google.com/ServiceLoginAuth" id="gaia_loginform">
             <a class="btn btn-success" href="https://mail.google.com/a/phys.tw/" role="button">登入</a>
           </form>
 
@@ -67,51 +62,60 @@
       </div>
     </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron" style="background-image: url(images/198112.jpg); background-repeat: no-repeat; background-position: 0% 40%; background-size:100% auto;">
-      <div class="container">
-        <h1 style="color:white">台大物理系學會</h1>
-        <p style="color:white">Department of Physics, National Taiwan University</p>
-        <p><a class="btn btn-primary btn-lg" role="button" href="http://blog.phys.tw">Blog &raquo;</a></p>
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel" data-slide-to="1"></li>
+		<li data-target="#carousel" data-slide-to="2"></li>
+	  </ol>
+	   
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
+	    <div class="item active">
+		  <img src="images/198112.jpg"/>
+		  <div class="carousel-caption">
+		    <h1>台大物理系學會</h1>
+			<p>Department of Physics, National Taiwan University</p>
+			<p><a class="btn btn-primary btn-lg" role="button" href="http://blog.phys.tw">Blog &raquo;</a></p>
+		  </div>
+		</div>
+		<div class="item">
+		  <img src="images/44796294.jpg" />
+		  <div class="carousel-caption">
+		    <h1>台大物理營</h1>
+			<p>台大物理系學生會於每年寒假時會例行舉辦之冬令營隊活動</p>
+			<p><a class="btn btn-primary btn-lg" role="button" href="http://camp.phys.tw">網站 &raquo;</a></p>
+		  </div>
+		</div>
+		<div class="item">
+		  <div class="carousel-caption">
+		  	<h1>杜鵑花節</h1>
+		  	<p></p>
+		  	<p><a class="btn btn-primary btn-lg" role="button" href="http://azalea.phys.tw">網站 &raquo;</a></p>
+		  </div>
+		</div>
       </div>
-    </div>
-
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+      <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+	</div>
+	
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-3">
-          <h2>物理營</h2>
-          <p></p>
-          <p><a class="btn btn-default" href="http://camp.phys.tw" role="button">網站 &raquo;</a></p>
-        </div>
-        <div class="col-md-3">
-          <h2>物理之夜</h2>
-          <p></p>
-          <p><a class="btn btn-default" href="http://night.phys.tw" role="button">網站 &raquo;</a></p>
-       </div>
-        <div class="col-md-3">
-          <h2>杜鵑花節</h2>
-          <p></p>
-          <p><a class="btn btn-default" href="http://azaleaday.phys.tw" role="button">網站 &raquo;</a></p>
-        </div>
-        <div class="col-md-3">
-          <h2>大物盃</h2>
-          <p></p>
-          <p><a class="btn btn-default" href="http://cup.phys.tw" role="button">網站 &raquo;</a></p>
-        </div>
-      </div>
 
       <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
+      <hr id="about">
+      <div  class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">關於<span class="text-muted">系學會</span></h2>
           <p class="lead">
             <ul>
-              <li><h3>會長：王作剛<h3></li>
-              <li><h3>副會長：張從文</h3></li>
+              <li><h3>會長：鍾易<h3></li>
+              <li><h3>副會長：江翊,曾奕晴</h3></li>
             </ul>
           </p>
         </div>
@@ -119,9 +123,8 @@
           <img class="featurette-image img-responsive" src="images/44796294.jpg" alt="About Us">
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
+      
+      <hr id="contact" class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="images/7833318.jpg" alt="Contact">
@@ -156,5 +159,11 @@
       ga('create', 'UA-772368-16', 'phys.tw');
       ga('send', 'pageview');
     </script>
+	<script>
+	  $('body').scrollspy({ target: '.navbar-1' })
+	</script>
+	<script>
+	  $('carousel').carousel({interval: 2000})
+	</script>
   </body>
 </html>
