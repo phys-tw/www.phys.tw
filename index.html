@@ -12,8 +12,8 @@
     <meta content="[ phys.tw ]" property="og:title">
     <meta content="[ phys.tw ]" name="twitter:title">
     <meta content="臺灣大學物理系學會" name="twitter:description">
-    <meta content="http://www.phys.tw/phybuilding.gif" property="og:image">
-    <meta content="http://www.phys.tw/phybuilding.gif" name="twitter:image:src">
+    <meta content="http://www.phys.tw/images/phybuilding.gif" property="og:image">
+    <meta content="http://www.phys.tw/images/phybuilding.gif" name="twitter:image:src">
 
     <title>[ NTU Physics ]</title>
 
@@ -35,6 +35,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+        
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -61,7 +62,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">系隊<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                  	<li><a href="https://sites.google.com/a/phys.tw/tt">系桌(table tenis)</a></li>
+                    <li><a href="https://sites.google.com/a/phys.tw/tt">系桌(table tenis)</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -89,6 +90,7 @@
 
       </div>
     </div>
+
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -98,14 +100,93 @@
             <h4 class="modal-title" id="myModalLabel">Registration</h4>
           </div>
           <div class="modal-body">
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload=""></iframe>
             
+            <p>申請資格：</p>
+            <p>* 台灣大學物理系大學部學生及系友（含轉系、轉學）</p>
+            <p>* 台灣大學物理系所/天文物理所/應用物理所 的 研究室/實驗室</p>
+            <p>* 台灣大學物理系各年級/系隊/營隊/活動 等公用帳號</p>
+            
+            <form action="https://docs.google.com/forms/d/1kzVPR0JRwYKbrkwchMOizk3zlPGSJ3y5NzpAgC80bWU/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="aftersubmited(event)"><ol role="list" class="ss-question-list" style="padding-left: 0">
+                
+                <div class="control-group">
+                <label class="control-label" for="entry_2128592943">姓名</label>
+                <div class="controls">
+                <input id="entry_2128592943" name="entry_2128592943" type="text" placeholder="(必填欄位)" class="form-control" required="">
+                <p class="help-block">不可以填綽號</p>
+                </div>
+                </div>
+                
+                <div class="control-group">
+                <label class="control-label" for="entry_1549295648">學號</label>
+                <div class="controls">
+                <input id="entry_1549295648" name="entry_1549295648" type="text" placeholder="(必填欄位)" class="form-control" required="" pattern=".*b.*" title="內容必須包含：b">
+                <p class="help-block">格式：bXX2020XX</p>
+                </div>
+                </div>
+
+                <div class="control-group">
+                <label class="control-label" for="entry_752103452">E-mail </label>
+                <div class="controls">
+                <input id="entry_752103452" name="entry_752103452" type="email" placeholder="(必填欄位)" class="form-control" required="" title="請輸入有效的電子郵件地址">
+                <p class="help-block">依此E-mail寄發密碼 請輸入有效的電子郵件地址</p>
+                </div>
+                </div>
+                
+                <div class="control-group">
+                <label class="control-label" for="entry_1023672942">手機號碼</label>
+                <div class="controls">
+                <input id="entry_1023672942" name="entry_1023672942" type="text" placeholder="(必填欄位)" class="form-control" required="">
+                <p class="help-block">手機號碼 作為身分認證用 </p>
+                </div>
+                </div>
+                
+                <div class="control-group">
+                <label class="control-label" for="entry_1842734460">冷月ID</label>
+                <div class="controls">
+                <input id="entry_1842734460" name="entry_1842734460" type="text" class="form-control">
+                <p class="help-block">冷月ID 沒有的話快去申請一個 </p>
+                </div>
+                </div>
+                
+                <div class="control-group">
+                <label class="control-label" for="entry_346163933">欲申請的帳號名稱</label>
+                <div class="controls">
+                <input id="entry_346163933" name="entry_346163933" type="text" placeholder="(必填欄位)" class="form-control" required="">
+                <p class="help-block">英文小寫或數字，不可含空格及符號</p>
+                </div>
+                </div>
+
+                <input type="hidden" name="draftResponse" value="[,,&quot;5820954956707697122&quot;]">
+                <input type="hidden" name="pageHistory" value="0">
+                <input type="hidden" name="fbzx" value="5820954956707697122">
+                <button type="submit" class="btn btn-primary" name="submit" id="ss-submit">提交</button>
+                </ol>
+            </form>
           </div>
           <div class="modal-footer">
           </div>
         </div>
       </div>
     </div>
-
+    <div class="modal fade" id="reg">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">Registration Complete</h4>
+          </div>
+          <div class="modal-body">
+            <p>我們已經收到你/妳的申請了!</p>
+            <p>當帳號可以使用時，你/妳將會收到帳號的密碼</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -219,6 +300,13 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-772368-16', 'phys.tw');
       ga('send', 'pageview');
+    </script>
+    <script>
+    function aftersubmited(event)
+    {
+      $('#myModal').modal('hide');
+      $('#reg').modal('show');
+    }
     </script>
   </body>
 </html>
