@@ -107,7 +107,7 @@
             <p>* 台灣大學物理系所/天文物理所/應用物理所 的 研究室/實驗室</p>
             <p>* 台灣大學物理系各年級/系隊/營隊/活動 等公用帳號</p>
 
-            <form action="https://docs.google.com/forms/d/1kzVPR0JRwYKbrkwchMOizk3zlPGSJ3y5NzpAgC80bWU/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="aftersubmited(event)"><ol role="list" class="ss-question-list" style="padding-left: 0">
+            <form action="https://docs.google.com/forms/d/1kzVPR0JRwYKbrkwchMOizk3zlPGSJ3y5NzpAgC80bWU/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="aftersubmitted(event)"><ol role="list" class="ss-question-list" style="padding-left: 0">
 
                 <div class="control-group">
                 <label class="control-label" for="entry_2128592943">姓名</label>
@@ -302,6 +302,13 @@
       ga('create', 'UA-53107653-1', 'auto');
       ga('send', 'pageview');
 
+    </script>
+    <script>
+     function aftersubmitted(event)
+     {
+       $('#myModal').modal('hide');
+       $('#reg').modal('show');
+     }
     </script>
   </body>
 </html>
