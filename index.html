@@ -59,6 +59,20 @@
 <!--                <li class="active"><a href="#">Home</a></li>  -->
                 <li><a href="#about">關於系學會</a></li>
                 <li><a href="#contact">聯絡我們</a></li>
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">系學會相關網站<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://it.phys.tw">網路部</a></li>
+                    <li><a href="http://exam.phys.tw" data-toggle="tooltip" data-placement="bottom" title="內有物理系考古題網站連結，物理系各科的期中、期末、段考題目經教授同意後公佈在考古題網站上，準備考試時可以多利用。也歡迎大家在考完試後將考卷投入系學會(R308)外的信封中造福未來修課的學弟妹。">考古題網站</a></li>
+                    <li><a href="https://www.facebook.com/groups/ntuphysst/" data-toggle="tooltip" data-placement="bottom" title="台大物理系大學部電子公告欄，各種關於物理系學生的事務都會在此版由系學會幹部成員們公佈，包括系上大小活動、學術演講和參訪、學生福利、失物招領、學生活動空間相關規定等都會經由此平台告知系上的學生。欲加入請私訊任何一個管理員說明身份。">台大物理系公佈欄</a></li>
+                    <li><a href="https://www.facebook.com/groups/ntuphysalumni/" data-toggle="tooltip" data-placement="bottom" title="物理系在學學生與系友的交流平台，提供自我介紹、認親、留學資訊、工作機會交流與分享、學術討論、生涯規劃分享與詢問等功能。欲加入請私訊管理員說明身份。">NTU Physics Alumni Club</a></li>
+                  	<li class="divider"></li>
+                  	<li><a href="http://camp.phys.tw">台大物理營</a></li>
+                  	<li><a href="http://azalea.phys.tw">杜鵑花節網站</a></li>
+                  </ul>
+                </li>
+                
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">系隊<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -79,18 +93,18 @@
                     <li><a href="http://phy.tw/">phy.tw</a></li>
                   </ul>
                 </li>
-			  </ul>
+              </ul>
 
-			  <ul class="nav navbar-nav navbar-right">
-			    <li><a data-toggle="modal" data-target="#myModal"  role="button">註冊</a></li>
-				<li class="dropdown"> 
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">登入<span class="caret"></span></a>
-				  <ul class="dropdown-menu" role="menu">
-				    <li><a href="https://mail.google.com/a/phys.tw/">郵件</a></li>
-					<li><a href="https://drive.google.com/a/phys.tw/">雲端硬碟</a></li>
-					<li><a href="https://google.com/a/phys.tw/">主控台</a></li>
-				  </ul>
-				</li>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="modal" data-target="#myModal"  role="button">註冊</a></li>
+                <li class="dropdown"> 
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">登入<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://mail.google.com/a/phys.tw/">郵件</a></li>
+                    <li><a href="https://drive.google.com/a/phys.tw/">雲端硬碟</a></li>
+                    <li><a href="https://google.com/a/phys.tw/">主控台</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -213,7 +227,7 @@
               <p>Department of Physics, National Taiwan University</p>
               <p>
                 <a class="btn btn-lg btn-primary" href="http://exam.phys.tw" role="button">考古題網站 &raquo;</a>
-				<a class="btn btn-lg btn-primary" href="http://it.phys.tw" role="button">網路部 &raquo;</a>
+                <a class="btn btn-lg btn-primary" href="http://it.phys.tw" role="button">網路部 &raquo;</a>
               </p>
             </div>
           </div>
@@ -321,5 +335,10 @@
        $('#reg').modal('show');
      }
     </script>
+    <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script
   </body>
 </html>
