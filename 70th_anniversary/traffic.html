@@ -32,8 +32,8 @@
 						<li><a href="index.html">首頁</a></li>
 						<li><a href="activity.html">活動介紹</a></li>
 						<li><a href="register.html">報名專區</a></li>
-						<li class="active"><a href="donate.html">募款資訊</a></li>
-						<li><a href="traffic.html">交通資訊</a></li>
+						<li><a href="donate.html">募款資訊</a></li>
+						<li class="active"><a href="traffic.html">交通資訊</a></li>
 						<li><a href="photo.html">照片區</a></li>
 					</ul>
 				</nav>
@@ -54,30 +54,19 @@
 			<div id="content" class="container">
 				<section>
 					<header>
-						<h2>募款資訊</h2>
-						<span class="byline">活動募款</span>
+						<h2>交通資訊</h2>
+						<span class="byline">交通方式:</span>
 					</header>
-					<p>還沒開始募款喔</p>
-					<hr/>
-					<div class="progressbar">
-						<span>20</span>
-						&nbsp;&nbsp;目前募款進度: 20000元/100000元
+					<p>自行開車: </p>
+					<p>搭乘捷運: </p>
+					<p>搭乘公車: </p>
+					<h2>地圖</h2>
+					<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d903.8396722844865!2d121.53669544722139!3d25.021898621892984!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1404144589680" width="450" height="450" frameborder="0" style="border:0"></iframe>
 					</div>
 				</section>
 			</div>
 		</div>
-		<script type="text/javascript">
-			$(function(){
-				$('.progressbar').each(function(){
-					var $this = $(this), 
-						_width = $this.width(), 
-						$span = $this.find('span'), 
-						_val = $this.find('span').text(), 
-						_text = $this.clone().find('span').remove().end().text();
-					$span.addClass('inprogress').width(_width / 100 * _val).text(_text);
-				});
-			});
-		</script>
 	<!-- /Main -->
 
 	<!-- Footer -->

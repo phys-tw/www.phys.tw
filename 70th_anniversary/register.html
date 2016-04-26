@@ -33,6 +33,8 @@
 						<li><a href="activity.html">活動介紹</a></li>
 						<li class="active"><a href="register.html">報名專區</a></li>
 						<li><a href="donate.html">募款資訊</a></li>
+						<li><a href="traffic.html">交通資訊</a></li>
+						<li><a href="photo.html">照片區</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -41,7 +43,7 @@
 				<!-- Logo -->
 				<div id="logo">
 					<h1><a href="#">70th Anniversary</a></h1>
-					<span class="tag">Department of Physics, Nation Taiwan University</span>
+					<span class="tag">Department of Physics, National Taiwan University</span>
 				</div>
 			</div>
 		</div>
@@ -53,23 +55,14 @@
 				<section>
 					<header>
 						<h2>報名專區</h2>
-						<span class="byline">報名</span>
+						<span class="byline">活動報名</span>
 					</header>
-					<p>還沒開始報名喔</p>
+					<p>點此進入報名</p>
+					<button class="button button-style1" id="myBtn">報名去</button>
 				</section>
 			</div>
 		</div>
 	<!-- /Main -->
-
-	<!-- Tweet -->
-		<div id="tweet">
-			<div class="container">
-				<section>
-					<blockquote>&ldquo;一個人的真正價值首先決定於他在什麼程度上和什麼意義上從自我解放出來。—— 愛因斯坦&rdquo;</blockquote>
-				</section>
-			</div>
-		</div>
-	<!-- /Tweet -->
 
 	<!-- Footer -->
 		<div id="footer">
@@ -79,12 +72,6 @@
 						<span class="byline">主辦單位：台大物理系</span>
 						<span class="byline">協辦單位：台大物理系系學會</span>
 					</header>
-					<ul class="contact">
-						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
-						<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
-					</ul>
 				</section>
 			</div>
 		</div>
@@ -96,7 +83,58 @@
 				Design: <a href="http://templated.co">TEMPLATED</a>
 			</div>
 		</div>
+		
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close">×</span>
+			<h2 class="modal-title">活動報名</h2>
+		</div>
+		<div class="modal-body">
+			<div class="control-group">
+				<label class="control-label" for="entry_1087799987">姓名</label>
+				<div class="controls">
+				<input id="entry_1087799987" name="entry_1087799987" type="text" placeholder="(必填欄位)" class="form-control" required="">
+				</div>
+				<p class="help-block">&nbsp;</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+		</div>
+	</div>
+	
+	<script>
+	// Get the modal
+	var modal = document.getElementById('myModal');
 
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on the button, open the modal 
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+
+	</script>
+
+</div>
 
 	</body>
 </html>

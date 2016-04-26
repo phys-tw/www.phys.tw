@@ -32,9 +32,9 @@
 						<li><a href="index.html">首頁</a></li>
 						<li><a href="activity.html">活動介紹</a></li>
 						<li><a href="register.html">報名專區</a></li>
-						<li class="active"><a href="donate.html">募款資訊</a></li>
+						<li><a href="donate.html">募款資訊</a></li>
 						<li><a href="traffic.html">交通資訊</a></li>
-						<li><a href="photo.html">照片區</a></li>
+						<li class="active"><a href="photo.html">照片區</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -47,38 +47,30 @@
 				</div>
 			</div>
 		</div>
-	<!-- Header --> 
 
-	<!-- Main -->
-		<div id="main">
+	<!--#Main-->
+		<div id="main"  class="homepage">
 			<div id="content" class="container">
-				<section>
+				<div class="row">
+					<section class="12u">
 					<header>
-						<h2>募款資訊</h2>
-						<span class="byline">活動募款</span>
+						<h2>照片區</h2>
+						<span class="byline">系上活動照片</span>
 					</header>
-					<p>還沒開始募款喔</p>
-					<hr/>
-					<div class="progressbar">
-						<span>20</span>
-						&nbsp;&nbsp;目前募款進度: 20000元/100000元
-					</div>
-				</section>
+					</section>			
+				</div>
+				<div class="row">
+					<section class="6u">
+						<div class="image full"><img src="images/photo1.jpg"></div>
+						<p>台大物理營 專為高中生準備的物理奇幻之旅</p>
+					</section>
+					<section class="6u">
+						<div class="image full"><img src="images/photo2.jpg"></div>
+						<p>大物盃 不只會念書更會運動!</p>
+					</section>
+				</div>
 			</div>
 		</div>
-		<script type="text/javascript">
-			$(function(){
-				$('.progressbar').each(function(){
-					var $this = $(this), 
-						_width = $this.width(), 
-						$span = $this.find('span'), 
-						_val = $this.find('span').text(), 
-						_text = $this.clone().find('span').remove().end().text();
-					$span.addClass('inprogress').width(_width / 100 * _val).text(_text);
-				});
-			});
-		</script>
-	<!-- /Main -->
 
 	<!-- Footer -->
 		<div id="footer">
@@ -91,7 +83,6 @@
 				</section>
 			</div>
 		</div>
-	<!-- /Footer -->
 
 	<!-- Copyright -->
 		<div id="copyright">
@@ -99,7 +90,6 @@
 				Design: <a href="http://templated.co">TEMPLATED</a>
 			</div>
 		</div>
-
 
 	</body>
 </html>

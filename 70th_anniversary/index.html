@@ -33,6 +33,8 @@
 						<li><a href="activity.html">活動介紹</a></li>
 						<li><a href="register.html">報名專區</a></li>
 						<li><a href="donate.html">募款資訊</a></li>
+						<li><a href="traffic.html">交通資訊</a></li>
+						<li><a href="photo.html">照片區</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -41,7 +43,7 @@
 				<!-- Logo -->
 				<div id="logo">
 					<h1><a href="#">70th Anniversary</a></h1>
-					<span class="tag">Department of Physics, Nation Taiwan University</span>
+					<span class="tag">Department of Physics, National Taiwan University</span>
 				</div>
 			</div>
 		</div>
@@ -50,80 +52,78 @@
 		<div id="featured">
 			<div class="container">
 				<header>
-					<h2>台大物理系70週年系慶</h2>
+					<h2>台大物理系70週年系慶活動網頁</h2>
 				</header>
-				<p>台大物理<strong>70週年</strong>系慶</p>
-				<hr />
-				<div class="row">
+				<p>活動日期: 2016年11月26日 星期六</p>
+				<header>
+					<h3 style="color: #FF0044">距離週年慶還有<strong><span id="countdownday"></span></strong>天</h3>
+					<script type="text/javascript">
+				<!--
+				var montharray = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+				function countdown(yr,m,d){
+					theyear=yr; themonth=m; theday=d;
+					var today = new Date();
+					var todayy = today.getYear();
+					if(todayy < 1000) todayy += 1900;
+					var todaym = today.getMonth();
+					var todayd = today.getDate();
+					var todaystring = montharray[todaym]+" "+todayd+", "+todayy;
+					futurestring = montharray[m-1]+" "+d+", "+yr;
+					dd = Date.parse(futurestring)-Date.parse(todaystring);
+					dday = Math.floor(dd/(60*60*1000*24)*1);
+					if(dday<=0) {
+						document.getElementById("countdownday").innerHTML = "0"; return;}
+					else {
+						document.getElementById("countdownday").innerHTML = 
+						""+dday+"";}
+					setTimeout("countdown(theyear,themonth,theday)",1000);}
+				countdown(2016,11,26);
+					-->
+					</script>
+				</header>
+				<!-- <div class="row">
 					<section class="4u">
 						<span class="pennant"><span class="fa fa-briefcase"></span></span>
-						<h3>關於物理系</h3>
-						<p>系所沿革</p>
+						<h3>活動介紹</h3>
+						<p>在系慶當天，物理系會舉辦各種活動</p>
 						<a href="#" class="button button-style1">Read More</a>
 					</section>
 					<section class="4u">
 						<span class="pennant"><span class="fa fa-lock"></span></span>
-						<h3>活動介紹</h3>
-						<p>各種活動</p>
+						<h3>報名專區</h3>
+						<p>活動報名請按此</p>
 						<a href="#" class="button button-style1">Read More</a>
 					</section>
 					<section class="4u">
 						<span class="pennant"><span class="fa fa-globe"></span></span>
-						<h3>報名專區</h3>
-						<p>報名表</p>
+						<h3>募款資訊</h3>
+						<p>了解更多募款資訊</p>
 						<a href="#" class="button button-style1">Read More</a>
 					</section>
-
-				</div>
+				</div>-->
 			</div>
 		</div>
-<!--
-	#Main
+
+	<!--#Main-->
 		<div id="main">
 			<div id="content" class="container">
-
 				<div class="row">
-					<section class="6u">
-						<a href="#" class="image full"><img src="images/pic01.jpg" alt=""></a>
-						<header>
-							<h2>Mauris vulputate dolor</h2>
-						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-					</section>				
-					<section class="6u">
-						<a href="#" class="image full"><img src="images/pic02.jpg" alt=""></a>
-						<header>
-							<h2>Mauris vulputate dolor</h2>
-						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+					<section class="12u">
+					<div class="image centered"><img src="images/main2.jpg"></div>
+					<header>
+						<h2>系主任的話</h2>
+					</header>
+					<p>(系主任的話)</p>
 					</section>				
 				</div>
-
-				<div class="row">
-					<section class="6u">
-						<a href="#" class="image full"><img src="images/pic03.jpg" alt=""></a>
-						<header>
-							<h2>Mauris vulputate dolor</h2>
-						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-					</section>				
-					<section class="6u">
-						<a href="#" class="image full"><img src="images/pic04.jpg" alt=""></a>
-						<header>
-							<h2>Mauris vulputate dolor</h2>
-						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-					</section>				
-				</div>
-			
 			</div>
 		</div>
- -->
+
 	<!-- Tweet -->
 		<div id="tweet">
 			<div class="container">
 				<section>
-					<blockquote>&ldquo;一個人的真正價值首先決定於他在什麼程度上和什麼意義上從自我解放出來。—— 愛因斯坦&rdquo;</blockquote>
+					<blockquote>&ldquo;一天只有二十一小時，剩下三小時是用來沉思的。—— 傅斯年&rdquo;</blockquote>
 				</section>
 			</div>
 		</div>
@@ -136,12 +136,6 @@
 						<span class="byline">主辦單位：台大物理系</span>
 						<span class="byline">協辦單位：台大物理系系學會</span>
 					</header>
-					<ul class="contact">
-						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
-						<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
-					</ul>
 				</section>
 			</div>
 		</div>
