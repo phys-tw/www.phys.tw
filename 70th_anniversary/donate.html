@@ -33,6 +33,8 @@
 						<li><a href="activity.html">活動介紹</a></li>
 						<li><a href="register.html">報名專區</a></li>
 						<li class="active"><a href="donate.html">募款資訊</a></li>
+						<li><a href="traffic.html">交通資訊</a></li>
+						<li><a href="photo.html">照片區</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -41,7 +43,7 @@
 				<!-- Logo -->
 				<div id="logo">
 					<h1><a href="#">70th Anniversary</a></h1>
-					<span class="tag">Department of Physics, Nation Taiwan University</span>
+					<span class="tag">Department of Physics, National Taiwan University</span>
 				</div>
 			</div>
 		</div>
@@ -53,23 +55,55 @@
 				<section>
 					<header>
 						<h2>募款資訊</h2>
-						<span class="byline">募款</span>
+						<span class="byline">小額捐款</span>
 					</header>
-					<p>還沒開始募款喔</p>
+					<p align="left"><b>募款目的:</b></p>
+					<p>1. 本系系館設施堪稱一流。為維持此大樓處於最佳狀態，需編列預算做經常性的維修與更新。但目前系所經費用於支付電費已感捉襟見肘，難有經費做經常性的維護與更新。募款首要目的為維修及增進物理系大樓功能，重點包括外觀維持，網路升級及電力系統改善。</p>
+					<p>2. 支應本次系慶所需經費及以後系友相關聯誼活動經費。</p>
+					<br/>
+					<p align="left"><b>募款目標:</b></p>
+					<p>募款700萬以慶祝台大物理系70年系慶。</p>
+					<br/>
+					<p align="left"><b>捐贈方式:</b></p>
+					<p>請點選進入<a href="http://giving.ntu.edu.tw/donate/giving01_onLine.html">線上捐款</a>網頁，選取您方便的方式捐贈。金額不拘，一千、兩千不算少，五萬、十萬不嫌多，歡迎踴躍捐贈，協助本系發展。此捐贈可扣抵稅款，請留下聯絡資訊以便我們將捐贈收據郵寄給您。</p>
+					<p>小額捐款採線上捐款方式，建議以信用卡或超商繳款(限人在臺灣)方式進行。</p>
+					<p>請點入<a href="http://giving.ntu.edu.tw/donate/giving01_onLine.html">線上捐款</a>，再選擇所在地區，此時會有捐款單的網頁出現。</p>
+					<p>填好個人資訊和捐款金額後，在"捐款用途/Contribution Description"選擇"其他指定用途/Other"，再填入本系帳戶號碼<font color="red">90F002</font>，並寫入"物理系70週年慶之用"/"Celebration of 70th anniversary of Department of Physics"，勾選其他選項之後，按送出/submit。</p>
+					<p>接下來，就可選擇線上刷卡或是列印繳款書至超商繳款兩種方式。</p>
+					<hr/>
+					<header>
+						<span class="byline">募款進度</span>
+					</header>
+					<div class="progressbar">
+						<span>0</span>
+						&nbsp;&nbsp;目前募款進度: 0萬元/700萬元
+					</div>
+					<hr/>
+					<header>
+						<span class="byline">講座募款</span>
+					</header>
+					<p align="left"><b>說明:</b></p>
+					<p>台灣薪資二十年來停滯不前，大學教授薪資僅為鄰近國家的1/4到 1/3，不利吸引及留住人才在台灣擔任教職。但優秀人才卻是決定一個大學能否傑出之關鍵，因此我們希望藉由募款成立講座來吸引及留住優秀人才。</p>
+					<p align="left"><b>目的:</b></p>
+					<p>對於表現優異的人才，授予講座教授榮譽，並給予每年一百萬元之獎金，以吸引及留住優秀人才。</p>
+					<p align="left"><b>需求及捐贈方式:</b></p>
+					<p>尋找公司及個人捐贈經費至台大永續基金物理系帳戶，以基金孳息設立講座。捐贈經費之公司及個人可享有講座冠名權。以台大永續基金保證年孳息率4% 計算，每一兩千五百萬元之捐款可設置一講座。此次募款希望能設立至少四個講座。希望系友以公司，家族或個人名義捐贈以協助本系永續發展，精益求精。有意捐贈者請與系主任張顏暉聯繫。</p>
 				</section>
 			</div>
 		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('.progressbar').each(function(){
+					var $this = $(this), 
+						_width = $this.width(), 
+						$span = $this.find('span'), 
+						_val = $this.find('span').text(), 
+						_text = $this.clone().find('span').remove().end().text();
+					$span.addClass('inprogress').width(_width / 100 * _val).text(_text);
+				});
+			});
+		</script>
 	<!-- /Main -->
-
-	<!-- Tweet -->
-		<div id="tweet">
-			<div class="container">
-				<section>
-					<blockquote>&ldquo;一個人的真正價值首先決定於他在什麼程度上和什麼意義上從自我解放出來。—— 愛因斯坦&rdquo;</blockquote>
-				</section>
-			</div>
-		</div>
-	<!-- /Tweet -->
 
 	<!-- Footer -->
 		<div id="footer">
@@ -79,12 +113,6 @@
 						<span class="byline">主辦單位：台大物理系</span>
 						<span class="byline">協辦單位：台大物理系系學會</span>
 					</header>
-					<ul class="contact">
-						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
-						<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
-					</ul>
 				</section>
 			</div>
 		</div>
