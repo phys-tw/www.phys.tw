@@ -57,8 +57,21 @@
 						<h2>報名專區</h2>
 						<span class="byline">活動報名</span>
 					</header>
-					<p>點此進入報名</p>
-					<button class="button button-style1" id="myBtn">報名去</button>
+					<p>物理系70周年系慶當天，系上將會舉行各式活動，舉凡論壇、學生成果展示，亦有晚宴等，且所有活動皆為免費。</p>
+					<p>我們誠摯邀請各位系友回到系上參加活動，若您當天有空且有意參與，請至以下網頁填寫報名表單。</p>
+					<a class="btn btn-info btn-lg" href="register_activity.html">活動報名</a>
+					<hr/>
+					<header>
+						<span class="byline">系友資訊</span>
+					</header>
+					<p>若您於系慶當天不克前來，我們仍然希望您能留下您的聯絡資訊，以便我們建立系友通訊錄。</p>
+					<a class="btn btn-info btn-lg" href="register_information.html">系友資訊</a>
+					<hr/>
+					<header>
+						<span class="byline">辦理同學會</span>
+					</header>
+					<p>系慶當天我們還提供了辦理同學會的功能，若您有意願，請至以下網頁填寫表單。</p>
+					<a class="btn btn-info btn-lg" href="register_reunion.html">同學會</a>
 				</section>
 			</div>
 		</div>
@@ -84,57 +97,8 @@
 			</div>
 		</div>
 		
-	<!-- The Modal -->
-	<div id="myModal" class="modal">
-	<!-- Modal content -->
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close">×</span>
-			<h2 class="modal-title">活動報名</h2>
-		</div>
-		<div class="modal-body">
-			<div class="control-group">
-				<label class="control-label" for="entry_1087799987">姓名</label>
-				<div class="controls">
-				<input id="entry_1087799987" name="entry_1087799987" type="text" placeholder="(必填欄位)" class="form-control" required="">
-				</div>
-				<p class="help-block">&nbsp;</p>
-			</div>
-		</div>
-		<div class="modal-footer">
-		</div>
-	</div>
-	
-	<script>
-	// Get the modal
-	var modal = document.getElementById('myModal');
-
-	// Get the button that opens the modal
-	var btn = document.getElementById("myBtn");
-
-	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("close")[0];
-
-	// When the user clicks on the button, open the modal 
-	btn.onclick = function() {
-		modal.style.display = "block";
-	}
-
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-		modal.style.display = "none";
-	}
-
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-		if (event.target == modal) {
-			modal.style.display = "none";
-		}
-	}
-
-	</script>
-
-</div>
-
+	<!-- script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</body>
 </html>
