@@ -1961,8 +1961,17 @@ table {
 	color: #000;
 	text-align: left;
 	border-collapse: collapse;
-	border: 1px solid #ffbb77;
+	border: 1px #ffbb77;
 	width: 80%;	
+}
+table.simple{
+	font: 100%;
+	color: #000;
+	text-align: center;
+	border-collapse: collapse;
+	border: 1px double #dadada;
+	width: 95%;	
+	padding-left: 5px;
 }
 tr.odd {
 	background-color: #ffdcb9;
@@ -2004,6 +2013,9 @@ tr,th,td {
 }
 td {
 	border-left: 1px solid #dadada;
+}
+td.simple{
+	border-left: 1px double #dadada;
 }
 tfoot tr {
 	background: #fff;
