@@ -174,8 +174,8 @@
 			.image.featured
 			{
 				display: block;
-				width: 100%;
-				margin: 0 0 2em 0;
+				width: 50%;
+				margin: 0 auto;
 			}
 			
 			.image.full
@@ -1931,7 +1931,7 @@ input[type="button"].btn-block {
 }
 
 /*********************************************************************************/
-/* Progressbar                                                                         */
+/* Progressbar                                                                   */
 /*********************************************************************************/
 
 .progressbar {
@@ -1949,4 +1949,78 @@ input[type="button"].btn-block {
 	background-color: #FF0000;
 	white-space: nowrap;
 	color: #fff;
+}
+
+/*********************************************************************************/
+/* Table                                                                         */
+/*********************************************************************************/
+
+/* ---- ( iTunes CSS ) ---- */
+table { 
+	font: 100%;
+	color: #000;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px #ffbb77;
+	width: 80%;	
+}
+table.simple{
+	font: 100%;
+	color: #000;
+	text-align: center;
+	border-collapse: collapse;
+	border: 1px double #dadada;
+	width: 95%;	
+	padding-left: 5px;
+}
+tr.odd {
+	background-color: #ffdcb9;
+}
+td.left{
+	width: 110px;
+}
+td.center{
+	width: 140px;
+}
+caption {
+	height: 45px;
+	line-height: 44px;
+	color: #60634E;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-left: -1px;
+	background: #ffffff;
+	background-position: 50% top;
+	border-left: 2px solid #616161;
+	border-right: 2px solid #616161;
+}
+thead th {
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+	background: #ffa042;
+	height: 33px;
+}
+tr {
+	vertical-align: top;
+}
+tr,th,td {
+	padding: .75em;
+}
+td {
+	border-left: 1px solid #dadada;
+}
+td.simple{
+	border-left: 1px double #dadada;
+}
+tfoot tr {
+	background: #fff;
+}
+tfoot td, tfoot th{
+	color: #000;
+	border: 0px;
 }
