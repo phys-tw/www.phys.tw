@@ -15,11 +15,24 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/blueimp-helper.js"></script>
+		<script src="js/blueimp-gallery.js"></script>
+		<script src="js/blueimp-gallery-fullscreen.js"></script>
+		<script src="js/blueimp-gallery-indicator.js"></script>
+		<script src="js/blueimp-gallery-video.js"></script>
+		<script src="js/blueimp-gallery-vimeo.js"></script>
+		<script src="js/blueimp-gallery-youtube.js"></script>
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/jquery.blueimp-gallery.js"></script>
+		<script src="js/demo/demo.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
+		<link rel="stylesheet" href="css/blueimp-gallery.css">
+		<link rel="stylesheet" href="css/blueimp-gallery-indicator.css">
+		<link rel="stylesheet" href="css/blueimp-gallery-video.css">
 	</head>
 	<body>
 
@@ -55,20 +68,32 @@
 					<section class="12u">
 					<header>
 						<h2>照片區</h2>
-						<span class="byline">活動照片</span>
 					</header>
 					</section>			
 				</div>
 				<div class="row">
-					<section class="6u">
-						<div class="image full"><img src="#"></div>
-						<p>目前暫無照片</p>
+					<section class="2u"></section>
+					<section class="8u">
+						<header><span class="byline">活動照片</span></header>
+						<div id="blueimp-image-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+							<div class="slides"></div>
+							<!-- <h3 class="title"></h3> -->
+							<a class="prev">‹</a>
+							<a class="next">›</a>
+							<a class="play-pause"></a>
+						</div>
 					</section>
 					<section class="6u">
+					</section>
+				</div>
+				<!--
+				<div class="row">
+					<section class="12u">
 						<div class="image full"><img src="#"></div>
 						<p>目前暫無照片</p>
 					</section>
 				</div>
+				-->
 			</div>
 		</div>
 
