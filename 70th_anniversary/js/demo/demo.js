@@ -79,9 +79,11 @@ $(function () {
         'Elephants_Dream_s1_proog.jpg/800px-Elephants_Dream_s1_proog.jpg'
     },
     {
-      title: 'LES TWINS - An Industry Ahead',
+      title: '台大物理系70周年系慶/專題演講-江台章院士 ',
       type: 'text/html',
-      youtube: 'zi4CIXpx7Bg'
+	  href: 'https://www.youtube.com/watch?v=GicNM0VUvXE',
+      youtube: 'GicNM0VUvXE',
+	  poster: 'https://img.youtube.com/vi/GicNM0VUvXE/maxresdefault.jpg'
     },
     {
       title: 'KN1GHT - Last Moon',
