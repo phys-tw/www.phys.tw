@@ -22,8 +22,8 @@ title: ⟨phys|tw⟩
 email: ntuphyssa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   臺灣大學物理系學會
-baseurl: "/www.phys.tw" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://www.phys.tw" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: phys-tw
 github_username:  phys-tw
 
