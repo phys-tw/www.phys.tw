@@ -1,6 +1,6 @@
 <!-- Header -->
 <header id="header">
-    <h1 id="logo"><a href="index.html">⟨phys|tw⟩</a></h1>
+    <h1 id="logo"><a href='{{ "/" | relative_url }}'>⟨phys|tw⟩</a></h1>
     <nav id="nav">
         <ul>
             <li>
@@ -13,6 +13,7 @@
                     <li><a href="http://exam.phys.tw/"
                             title="內有物理系考古題網站連結，物理系各科的期中、期末、段考題目經教授同意後公佈在考古題網站上，準備考試時可以多利用。也歡迎大家在考完試後將考卷投入系學會(R308)外的信封中造福未來修課的學弟妹。">考古題網站</a>
                     </li>
+                    <li><a href='{{ "/posts" | relative_url }}' title="台大物理系新版電子佈告欄，還在測試中，敬請期待！">新版公佈欄（測試中）</a></li>
                     <li><a href="https://www.facebook.com/groups/ntuphysst/"
                             title="台大物理系大學部電子公告欄，各種關於物理系學生的事務都會在此版由系學會幹部成員們公佈，包括系上大小活動、學術演講和參訪、學生福利、失物招領、學生活動空間相關規定等都會經由此平台告知系上的學生。欲加入請私訊任何一個管理員說明身份。">台大物理系公布欄</a>
                     </li>
@@ -33,7 +34,8 @@
                         <ul>
                             <li><a href="https://camp.phys.tw/" title="台大物理系學生會於每年寒假時會例行舉辦之冬令營隊活動">台大物理營</a>
                             </li>
-                            <li><a href="physnight/index.html" title="十八般武藝且看我們各顯才華">物理之夜</a></li>
+                            <li><a href='{{ "/physnight/index.html" | relative_url }}' title="十八般武藝且看我們各顯才華">物理之夜</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
